@@ -1,0 +1,49 @@
+body{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1,h2{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+
+header{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main{
+    margin: 3% 10%;
+    padding-bottom: 2%;
+    border: 1px solid black;
+}
+
+p{
+     width: 70%;
+     margin: auto;
+     line-height: 2em;
+     margin-bottom: 5%;
+}
+
+footer{
+    border-top: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+
+}
