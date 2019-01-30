@@ -1,0 +1,45 @@
+body{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+header, footer{
+    text-align: center;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 30px 0px;
+    
+}
+aside{
+    text-align: center;
+    width: 10%;
+    border: 1px solid #000;
+    
+    
+}
+aside > button{
+    margin: 60px 10px 10px 10px;
+    background-color: lightcyan;
+    padding: 20px 10px; 
+    width: 100px;
+}
+
+main{
+    width: 90%;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+main > h2, p{
+    margin: 80px;
+}
+
