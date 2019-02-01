@@ -12,7 +12,23 @@
 
   <button id="text1" class="heads"><i class="fas fa-font"></i><hr>Text</button>
   <div id="textmenu1" class="knappar">
-    <button id="txt" class="subs">Font-family</button>
+    
+    <button id="txt-fam" class="subs">Font-family</button>
+    <div id="famrad" class="knappar">
+        <label class="radios">Arial
+            <input type="radio" id="arial1" name="radio">
+            <span class="nyknapp"></span>
+          </label>
+          <label class="radios">Times New Roman
+            <input type="radio" checked="checked" name="radio">
+            <span class="nyknapp"></span>
+          </label>
+          <label class="radios">Verdana
+            <input type="radio" name="radio">
+            <span class="nyknapp"></span>
+          </label>
+    </div>
+
     <button id="txt" class="subs">Font-size</button>
     <button id="txt" class="subs">Font-color</button>
     <button id="txt" class="subs">Font-background</button>
@@ -60,10 +76,17 @@
     <button class="heads"><i class="fas fa-text-height"></i><hr>Height</button>
 </div>
 
+<div class="download">
+<button id="download" type="submit" class="save"><i class="fas fa-download"></i><hr>Save</button>
+<button id="code1" type="submit" class="save"><i class="fas fa-download"></i><hr>CSS</button>
+<button id="code2" type="submit" class="save"><i class="fas fa-download"></i><hr>HTML</button>
 </div>
-<iframe src="accordion-user.html" width="75%" height="800px"></iframe>
 
 
+</div> <!-- MENU SLUTAR HÄR -->
+
+<iframe src="accordion-user.html" width="75%" height="800px" id="frame1"></iframe>
 <script src="accordion.js"></script>
+
 </body>
 </html>

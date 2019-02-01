@@ -1,8 +1,12 @@
 *{
     display: grid;
 }
+#frame{
+  grid-column: 4/8;
+  grid-row: 1/6;
+}
 iframe{
-    grid-column: 2/8;
+    grid-column: 4/8;
     grid-row: 1/6;
 }
 .fas .fa-palette{
@@ -10,43 +14,43 @@ iframe{
     float: left;
 }
 .menu{
-    grid-column: 1/6;
+    grid-column: 2/6;
     grid-row: 1/1;
   width: 100px;
   height: 100%;
   margin: 5px;
+  padding: 10px;
   border-right: 3px solid lightsteelblue;
   border-left: 3px solid lightsteelblue;
-  padding: 10px;
 }
 button{
     outline: 1px solid black;
     color: whitesmoke;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     margin: 5px;
     text-align: center;
     }
     .super{
-        width: 90px;
-        background-color: darkgreen;
-        font-size: 12px;
+      width: 95px;
+      background-color: #31353B;
+      font-size: 14px;
     }
     .heads{
-        width: 80px;
-      background-color: lightslategrey;
-      font-size: 10px;
+      width: 95px;
+      background-color: #7E7B83;
+      font-size: 12px;
       text-align: center;
+      color: whitesmoke;
     }
     .subs{
-    background-color: lightseagreen;
-    color: whitesmoke;
-    padding: 10px;
+    background-color: rgb(194, 191, 191);
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
-    width: 70px;
-    font-size: 8px;
-    text-align: left;
+    width: 95px;
+    font-size: 10px;
+    text-align: center;
     }
   .hide{
     display: hidden;
@@ -56,4 +60,79 @@ button{
   }
   .show{
     display: block;
+  }
+  .download{
+    margin-top: 20px;
+    width: 40px;
+    float: left;
+  }
+  .save{
+    width: 40px;
+    background-color: #bada55;
+    font-size: 8px;
+    color: whitesmoke;
+    float: left;
+  }
+ #famrad>input{
+    background-color: green;
+    color: red;
+    font-size: 15px;
+  }
+
+  /* radio-knappar */
+
+  .radios {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .radios input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nyknapp {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 12px;
+    width: 12px;
+    background-color: #eee;
+    border-radius: 100%;
+  }
+  
+  .radios:hover input ~ .nyknapp {
+    background-color: lightblue;
+  }
+  
+  .radios input:checked ~ .nyknapp {
+    background-color: rebeccapurple;
+  }
+
+  .nyknapp:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radios input:checked ~ .nyknapp:after {
+    display: block;
+  }
+  
+  .radios .nyknapp:after {
+    top: 4px;
+    left: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: white;
   }

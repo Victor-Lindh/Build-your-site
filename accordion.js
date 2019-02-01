@@ -22,3 +22,15 @@ document.getElementById("menu4").classList.toggle("show");
 document.getElementById("footer").addEventListener("click", function(){
 document.getElementById("menu5").classList.toggle("show");
 });
+document.getElementById("txt-fam").addEventListener("click", function(){
+document.getElementById("famrad").classList.toggle("show");
+});
+
+document.getElementById("arial1").addEventListener("change", function(){
+
+    let x = document.getElementById("frame1");
+    let y = x.contentWindow.document;
+    let z = y.querySelector("p");
+    z.style.font = "bold 20px arial,sans-serif";
+})
+  
